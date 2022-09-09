@@ -17,4 +17,8 @@ class Solver
     end
     return factorial_number
   end
+
+  def reverse_string(str)
+    str.reverse
+  end
 end
