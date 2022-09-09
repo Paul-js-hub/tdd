@@ -18,4 +18,10 @@ describe Solver do
       expect(@solver.factorial(5)).to eql 120
     end
   end
+
+  describe '#reverse' do
+    it 'returns a reverse of a tring' do
+      expect(@solver.reverse_string('hello')).to eql 'olleh'
+    end
+  end
 end
