@@ -1,13 +1,8 @@
-class Solver 
-
+class Solver
   def factorial(number)
-    if number.negative?
-      return 'This is a negative error'
-    end
+    return 'This is a negative error' if number.negative?
 
-    if number == 0
-      return 1
-    end
+    return 1 if number.zero?
 
     i = 1
     factorial_number = 1
@@ -15,18 +10,19 @@ class Solver
       factorial_number *= i
       i += 1
     end
-    return factorial_number
+    factorial_number
   end
 
   def reverse_string(str)
     str.reverse
   end
+
   def fizzbuzz(number)
-    if number % 3 == 0 && number % 5 == 0
+    if (number % 3).zero? && (number % 5).zero?
       'fizzbuzz'
-  elsif number % 3 == 0
+    elsif (number % 3).zero?
       'fizz'
-    elsif number % 5 == 0
+    elsif (number % 5).zero?
       'buzz'
     else
       number.to_s
