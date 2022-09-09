@@ -20,8 +20,26 @@ describe Solver do
   end
 
   describe '#reverse' do
-    it 'returns a reverse of a tring' do
+    it 'returns a reverse of a string' do
       expect(@solver.reverse_string('hello')).to eql 'olleh'
     end
   end
+
+  describe '#fizzbuzz' do
+  it 'returns a fizz if number is divisible by 3' do
+    expect(@solver.fizzbuzz(3)).to eql 'fizz'
+  end
+end
+
+describe '#fizzbuzz' do
+it 'returns a buzz if number is divisible by 5' do
+  expect(@solver.fizzbuzz(5)).to eql 'buzz'
+end
+end
+
+describe '#fizzbuzz' do
+it 'returns a fizzbuzz if number is divisible by 3 and 5' do
+  expect(@solver.fizzbuzz(15)).to eql 'fizzbuzz'
+end
+end
 end

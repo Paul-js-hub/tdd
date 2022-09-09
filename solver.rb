@@ -21,4 +21,5 @@ class Solver
   def reverse_string(str)
     str.reverse
   end
+
 end
